@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // Outlet de la liste
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var addNumber: UITextField!
     
     //Initialisation du tableau
-    var list: [String] = ["Pompes"]
+    var list: [String] = ["Pompes", "Course à pied", "Saut à l'elastic"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

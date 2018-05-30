@@ -63,6 +63,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4pJ-u0-dbM" id="RTp-Tv-ZOH"/>
+                                    <outlet property="delegate" destination="4pJ-u0-dbM" id="doL-e3-BUd"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type d'exercice" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ulw-WI-m1D">
                                 <rect key="frame" x="16" y="82" width="343" height="30"/>
@@ -94,10 +98,7 @@
                     <connections>
                         <outlet property="addExercice" destination="Ulw-WI-m1D" id="5Ze-cz-yxd"/>
                         <outlet property="addNumber" destination="y7w-YL-Nej" id="G8B-mr-drP"/>
-                        <outlet property="name" destination="hhw-KE-pww" id="fNc-td-2hZ"/>
-                        <outlet property="tableCell" destination="Wop-AL-M7w" id="YoN-zr-POD"/>
                         <outlet property="tableView" destination="6XT-5I-4db" id="hYQ-KH-1ek"/>
-                        <outlet property="tableViewCell" destination="fHc-I8-Og9" id="RHK-p5-Hlz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIj-9J-hXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
